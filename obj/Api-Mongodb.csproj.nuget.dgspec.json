@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/romero/Documents/dotnet/Api-Mongodb/Api-Mongodb.csproj": {}
+  },
+  "projects": {
+    "/home/romero/Documents/dotnet/Api-Mongodb/Api-Mongodb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/romero/Documents/dotnet/Api-Mongodb/Api-Mongodb.csproj",
+        "projectName": "Api-Mongodb",
+        "projectPath": "/home/romero/Documents/dotnet/Api-Mongodb/Api-Mongodb.csproj",
+        "packagesPath": "/home/romero/.nuget/packages/",
+        "outputPath": "/home/romero/Documents/dotnet/Api-Mongodb/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/romero/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.108/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
