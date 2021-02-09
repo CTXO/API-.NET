@@ -6,7 +6,7 @@ using MongoDB.Driver;
 namespace Api_Mongodb.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("infected")]
     public class InfectedController : ControllerBase
     {
         Data.MongoDB _mongoDB;
@@ -26,9 +26,10 @@ namespace Api_Mongodb.Controllers
         }
 
         [HttpGet]
-        public ActionResult getInfected()
+        public ActionResult getInfected() 
         {
             var infected_list = _infectedCollection.Find(Builders<Infected>.Filter.Empty).ToList();
+            return Ok(infected_list);
         }
     }
 }
