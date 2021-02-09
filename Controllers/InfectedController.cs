@@ -14,7 +14,7 @@ namespace Api_Mongodb.Controllers
         public InfectedController(Data.MongoDB mongoDB)
         {
             mongoDB = _mongoDB;
-            _infectedCollection = mongoDB.DB.GetCollection<Infected>(typeof(Infected).Name.ToLower());
+            _infectedCollection = _mongoDB.DB.GetCollection<Infected>(typeof(Infected).Name.ToLower());
         }
         [HttpPost]
         public ActionResult SaveInfected([FromBody] InfectedDTO dto )
