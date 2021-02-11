@@ -1,6 +1,9 @@
+using System;
+using System.Timers;
 using Api_Mongodb.Data.Collections;
 using Api_Mongodb.Models;
 using Microsoft.AspNetCore.Mvc;
+using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Api_Mongodb.Controllers
@@ -13,7 +16,7 @@ namespace Api_Mongodb.Controllers
         IMongoCollection<Infected> _infectedCollection;
         public InfectedController(Data.MongoDB mongoDB)
         {
-            mongoDB = _mongoDB;
+            _mongoDB = mongoDB;
             _infectedCollection = _mongoDB.DB.GetCollection<Infected>(typeof(Infected).Name.ToLower());
         }
         [HttpPost]

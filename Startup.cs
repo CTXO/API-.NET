@@ -25,8 +25,8 @@ namespace Api_Mongodb
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
             services.AddSingleton<Data.MongoDB>(); // Singleton is not very good for real-world applications
+            services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
